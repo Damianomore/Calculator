@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+*{ 
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+#html-body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(49, 47, 47);
+}
+
+#body-header {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(39, 38, 38);
+    color: white;
+    padding: 10px 0;
+
+}
+#header-title {
+    margin: 0;
+}
+#body-main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+}
+
+.calculator {
+    background-color: rgb(85, 82, 82);
+    padding: 1.3rem;
+    border-radius: 5px;
+    border: rgb(128, 119, 119) 1px solid;
+
+}
+.screen {
+    width: 100%;
+    border: rgb(128, 119, 119) 1px solid;
+    border-radius: 5px;
+    background-color: beige;
+    margin-bottom: 0.8rem;
+    text-align: right;
+    background-color: rgb(48, 47, 47);
+    padding: 10px 0;
+}
+.btn-grid {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Clear Clear Delete Delete"
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . .";
+      
+}
+
+.Clear { 
+    grid-area: Clear;
+    background-color: rgb(202, 20, 20);
+    text-align: center; 
+    font-size: 1.7rem;
+    border-radius: 5px;
+    padding: 5px;
+    border: rgb(128, 119, 119) 1px solid;
+}
+      
+.Delete { 
+    grid-area: Delete; 
+    background-color: rgb(73, 67, 66);
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 5px;
+    border: rgb(128, 119, 119) 1px solid;
+    border-radius: 5px;
+}
+
+
+.btn {
+    font-size: 1.7rem;
+    padding: 5px 10px;
+    border: rgb(128, 119, 119) 1px solid;
+    border-radius: 5px;
+    background-color: rgb(48, 43, 43);
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: rgba(48, 43, 43, 0.6);
+}
+
+.Clear:hover {
+    cursor: pointer;
+    background-color: rgb(216, 21, 21);
+
+}
+
+.Delete:hover {
+    cursor: pointer;
+    background-color: rgb(82, 76, 75);
+}
+
+.screen-before {
+    margin-right: 10px;
+
+}
+
+.screen-current {
+    font-size: 2rem;
+    margin-right: 5px;
+}
